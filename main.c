@@ -25,6 +25,19 @@ int main() {
 
 void bmi() {
    // Hier muss der Code für die BMI-Aufgabe geschrieben werden.
+   float grosse;
+   float grosse2;
+   float gewicht;
+   float bmi;
+   printf("Gewicht:\n");
+   scanf("%f",gewicht);
+    printf("%f",gewicht);
+   printf("Grosse:\n");
+   scanf("%f",grosse);
+   grosse2 = grosse * grosse;
+   bmi = gewicht/grosse2;
+   printf("\nBMI: %f",bmi);
+
 }
 
 void automat() {
