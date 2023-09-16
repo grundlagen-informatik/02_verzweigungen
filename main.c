@@ -26,16 +26,21 @@ int main() {
 void bmi() {
    // Hier muss der Code für die BMI-Aufgabe geschrieben werden.
    float grosse;
-   float grosse2;
    float gewicht;
    float bmi;
    printf("Gewicht:\n");
-   scanf("%f",gewicht);
-    printf("%f",gewicht);
-   printf("Grosse:\n");
-   scanf("%f",grosse);
-   grosse2 = grosse * grosse;
-   bmi = gewicht/grosse2;
+   scanf("%f",&gewicht);
+   printf("Groesse:\n");
+   scanf("%f",&grosse);
+   bmi = gewicht / (grosse * grosse);
+   if (bmi<18.5) {
+       printf("Untergewicht");
+
+    } else if (bmi>=18.5 && bmi<=24.9) {
+       printf("Normalgewicht");
+    } else {
+       printf("Ubergewicht");
+    }
    printf("\nBMI: %f",bmi);
 
 }
