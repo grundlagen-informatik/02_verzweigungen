@@ -40,17 +40,19 @@ void bmi() {
 }
 
 void automat() {
-    // Hier muss der Code für die Getränke-Automat-Aufgabe geschrieben werden. g=Getränk, z=Zahlung
-    int g, z ;
+    // Hier muss der Code für die Getränke-Automat-Aufgabe geschrieben werden.
+    float g, z, r =1.7, s=1.9, t=2.4; //g=Getränk, z=Zahlung, r,s,t = Getränkepreis Wasser, Cola, Bier
     printf( "Wahlen Sie ihr Getrank aus:\n");
-    printf("1. Wasser \t2.-\n2. Cola \t2.-\n3. Bier \t3.-\n\n");
+    printf("1. Wasser \t%.2f\n", r);
+    printf("2. Cola \t%.2f\n", s);
+    printf("3. Bier \t%.2f\n\n", t);
     printf("Bitte geben sie 1,2 oder 3 ein\n");
     scanf("%d", &g);    //Auswahl einlesen
-    if ( g == 1) { printf("Bitte 2.- Einwerfen\n");
+    if ( g == 1) { printf("Bitte %.2f Einwerfen\n", r);
     }
-    else if ( g == 2 ) { printf( "Bitte 2.- Einwerfen\n");
+    else if ( g == 2 ) { printf( "Bitte %.2f Einwerfen\n, s");
     }
-    else { printf( "Bitte 3.- Einwerfen\n");
+    else { printf( "Bitte %.2f Einwerfen\n", t);
     }
     scanf("%d", &z);    //Geld einwurf
     if ( z == 1) { printf("Ein Wasser wird ausgegeben");
