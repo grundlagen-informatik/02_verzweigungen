@@ -47,19 +47,21 @@ void automat() {
     printf("2. Cola \t%.2f\n", s);
     printf("3. Bier \t%.2f\n\n", t);
     printf("Bitte geben sie 1,2 oder 3 ein\n");
-    scanf("%d", &g);    //Auswahl einlesen
+    scanf("%f", &g);    //Auswahl einlesen
     if ( g == 1) { printf("Bitte %.2f Einwerfen\n", r);
     }
-    else if ( g == 2 ) { printf( "Bitte %.2f Einwerfen\n, s");
+    else if ( g == 2 ) { printf( "Bitte %.2f Einwerfen\n\n", s);
     }
     else { printf( "Bitte %.2f Einwerfen\n", t);
     }
-    scanf("%d", &z);    //Geld einwurf
-    if ( z == 1) { printf("Ein Wasser wird ausgegeben");
+    scanf("%f", &z);    //Geld einwurf
+    if ( z == r ) { printf("Ein Wasser wird ausgegeben");
     }
-    else if ( z == 2 ) { printf( "Eine Cola wird ausgegeben");
+    else if ( z == s ) { printf( "Eine Cola wird ausgegeben");
     }
-    else { printf( "Ein Bier wird ausgegeben");
+    else if ( z == t ) { printf( "Ein Bier wird ausgegeben");
+    }
+    else { printf( "Fehler");
     }
 
 }
